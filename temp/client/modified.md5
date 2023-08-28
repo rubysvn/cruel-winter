@@ -160,7 +160,7 @@ net/minecraft/src/GuiGameOver 0626b7253e436ffa481b1302d58dd0d1
 net/minecraft/src/GuiIngame f2614bfe803fac59298d116fccf56071
 net/minecraft/src/GuiIngameMenu d036997661c779fcd59b3af966ef9169
 net/minecraft/src/GuiInventory c1cbb888e45ea3c087fe028ce2f0fdde
-net/minecraft/src/GuiMainMenu 0038b0f68d65d2fbed36c4588c58da60
+net/minecraft/src/GuiMainMenu 9e76a88ece89cd36accadb18a30b24ed
 net/minecraft/src/GuiMultiplayer b506b26ec84e549f907e9713c9101f07
 net/minecraft/src/GuiOptions d2eb8ca673356c903999b8154c45d6ca
 net/minecraft/src/GuiScreen 16c0623e9eee5eec06c631244b293e0d
@@ -402,4 +402,4 @@ net/minecraft/src/WorldRenderer 7925512b17604b04cc25a665ffcdbc9e
 Start 036dac607ded9ab75161518405ef9ab2
 terrain.png 6dfd74fc451f138a8365019e5a880ff7
 title/mojang.png 975ae5eb051536464a072a139c56e410
-title/splashes.txt daab5d3706d2dbe0f7e183931d70e66e
+title/splashes.txt 2c1bb44d3a5dcf220dd86b0f61b0301f

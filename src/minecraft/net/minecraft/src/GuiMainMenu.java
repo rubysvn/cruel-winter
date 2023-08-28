@@ -70,9 +70,11 @@ public class GuiMainMenu extends GuiScreen {
 		this.controlList.clear();
 		this.controlList.add(new GuiButton(1, this.width / 2 - 100, this.height / 4 + 48, "Singleplayer"));
 		this.controlList.add(new GuiButton(2, this.width / 2 - 100, this.height / 4 + 72, "Multiplayer"));
-		this.controlList.add(new GuiButton(3, this.width / 2 - 100, this.height / 4 + 96, "Options..."));
-		this.controlList.add(new GuiButton(4, this.width / 2 - 100, this.height / 4 + 120, "Credits"));
-		this.controlList.add(new GuiButton(5, this.width / 2 - 100, this.height / 4 + 144, "Quit Game"));
+		
+		this.controlList.add(new GuiButton(3, this.width / 2 - 100, this.height / 4 + 96, 98, 20, "Options..."));
+		this.controlList.add(new GuiButton(4, this.width / 2 + 2,  this.height / 4 + 96, 98, 20, "Credits"));
+		this.controlList.add(new GuiButton(5, this.width / 2 - 100, this.height / 4 + 120, "Quit Game"));
+		
 		if(this.mc.session == null) {
 			((GuiButton)this.controlList.get(1)).enabled = false;
 		}
@@ -117,6 +119,7 @@ public class GuiMainMenu extends GuiScreen {
 		GL11.glScalef(f5, f5, f5);
 		this.drawCenteredString(this.fontRenderer, this.splashString, 0, -8, 16776960);
 		GL11.glPopMatrix();
+		this.drawString(this.fontRenderer, "Minecraft: Cruel Winter - " + this.mc.versionString, 2, 2, 5263440);
 		String string6 = "Copyright Mojang AB. Modified by rubysvn.";
 		this.drawString(this.fontRenderer, string6, this.width - this.fontRenderer.getStringWidth(string6) - 2, this.height - 10, 0xFFFFFF);
 		long j7 = Runtime.getRuntime().maxMemory();
