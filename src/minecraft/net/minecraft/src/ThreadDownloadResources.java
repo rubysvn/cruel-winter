@@ -30,7 +30,7 @@ public class ThreadDownloadResources extends Thread {
 	public void run() {
 		try {
 			ArrayList arrayList1 = new ArrayList();
-			URL uRL2 = new URL("http://www.minecraft.net/resources/");
+			URL uRL2 = new URL("http://betacraft.uk:11702/resources/"); //http://www.minecraft.net/resources/
 			BufferedReader bufferedReader3 = new BufferedReader(new InputStreamReader(uRL2.openStream()));
 			String string4 = "";
 
