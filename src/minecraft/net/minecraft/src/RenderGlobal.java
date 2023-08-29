@@ -125,7 +125,7 @@ public class RenderGlobal implements IWorldAccess {
 		Tessellator tessellator2 = Tessellator.instance;
 		tessellator2.startDrawingQuads();
 
-		for(int i3 = 0; i3 < 1500; ++i3) {
+		for(int i3 = 0; i3 < 250; ++i3) {
 			double d4 = (double)(random1.nextFloat() * 2.0F - 1.0F);
 			double d6 = (double)(random1.nextFloat() * 2.0F - 1.0F);
 			double d8 = (double)(random1.nextFloat() * 2.0F - 1.0F);

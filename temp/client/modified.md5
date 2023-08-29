@@ -327,7 +327,7 @@ net/minecraft/src/RenderEngine 87fe9c37abe9ef682419c30703215493
 net/minecraft/src/RenderEntity 5bb749fe0fdf21f35260a9df7083ef81
 net/minecraft/src/RenderFallingSand 8ce318abe88fd798b7d71726249f6103
 net/minecraft/src/RenderGiantZombie 5d631695a5a1341b749384914363b18f
-net/minecraft/src/RenderGlobal 6283163b29f188fa30d3a2d6d291a422
+net/minecraft/src/RenderGlobal ef0a99543e99fb81535d2b6bf4d478b5
 net/minecraft/src/RenderHelper 7f5eaebbd5c2861f96cc7bd1cfa6b88d
 net/minecraft/src/RenderItem 6551beaefd7aaed0f9568f12d2b40b12
 net/minecraft/src/RenderList aa4402e150b17e4d637f2c7282952765
