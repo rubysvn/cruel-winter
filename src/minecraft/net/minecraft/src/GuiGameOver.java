@@ -1,6 +1,9 @@
 package net.minecraft.src;
 
+import java.io.File;
+
 import org.lwjgl.opengl.GL11;
+import net.minecraft.client.Minecraft;
 
 public class GuiGameOver extends GuiScreen {
 	public void initGui() {

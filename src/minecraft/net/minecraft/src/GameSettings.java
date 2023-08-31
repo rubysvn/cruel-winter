@@ -153,6 +153,9 @@ public class GameSettings {
 
 				if(string3[0].equals("difficulty")) {
 					this.difficulty = Integer.parseInt(string3[1]);
+					if(this.difficulty > 1) {
+						this.difficulty = 1;
+					}
 				}
 
 				if(string3[0].equals("fancyGraphics")) {
