@@ -5,9 +5,9 @@ import org.lwjgl.opengl.GL11;
 public class GuiGameOver extends GuiScreen {
 	public void initGui() {
 		this.controlList.clear();
-		this.controlList.add(new GuiButton(1, this.width / 2 - 100, this.height / 4 + 72, "Title menu"));
+		this.controlList.add(new GuiButton(0, this.width / 2 - 100, this.height / 4 + 72, "Title menu"));
 		if(this.mc.session == null) {
-			((GuiButton)this.controlList.get(1)).enabled = false;
+			((GuiButton)this.controlList.get(0)).enabled = false;
 		}
 
 	}
@@ -15,14 +15,22 @@ public class GuiGameOver extends GuiScreen {
 	protected void keyTyped(char c1, int i2) {
 	}
 
-	protected void actionPerformed(GuiButton guiButton1) {
-		if(guiButton1.id == 0) {
-			;
-		}
+	protected String getSaveName(int i1) {
+		File file2 = Minecraft.getMinecraftDir();
+		return World.getLevelData(file2, "World" + i1) != null ? "World" + i1 : null;
+	}
 
-		if(guiButton1.id == 1) {
+	protected void actionPerformed(GuiButton guiButton1) {
+
+		if(guiButton1.id == 0) {
 			this.mc.changeWorld1((World)null);
 			this.mc.displayGuiScreen(new GuiMainMenu());
+
+			//File file3 = Minecraft.getMinecraftDir();
+			//String string2 = this.getSaveName(this.mc.theWorld);
+			//if(string2 != null) {
+			//	World.deleteWorld(file3, string2);
+			//}
 		}
 
 	}

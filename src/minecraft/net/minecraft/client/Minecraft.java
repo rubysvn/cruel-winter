@@ -126,7 +126,7 @@ public abstract class Minecraft implements Runnable {
 	public boolean isRaining = false;
 	long systemTime = System.currentTimeMillis();
 	
-	public String versionString = "Indev 0.1.3";
+	public String versionString = "Indev 0.1.4";
 
 	public Minecraft(Component component, Canvas canvas, MinecraftApplet mcApplet, int width, int height, boolean fullscreen) {
 		this.tempDisplayWidth = width;
