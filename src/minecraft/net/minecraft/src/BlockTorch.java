@@ -24,7 +24,7 @@ public class BlockTorch extends Block {
 		return 2;
 	}
 	
-	int litTime = mc.thisWorld.worldTime + 50; //12000
+	int litTime = (int)World.worldTime + 100; //12000
 
 	public boolean canPlaceBlockAt(World world1, int i2, int i3, int i4) {
 		return world1.isBlockNormalCube(i2 - 1, i3, i4) ? true : (world1.isBlockNormalCube(i2 + 1, i3, i4) ? true : (world1.isBlockNormalCube(i2, i3, i4 - 1) ? true : (world1.isBlockNormalCube(i2, i3, i4 + 1) ? true : world1.isBlockNormalCube(i2, i3 - 1, i4))));

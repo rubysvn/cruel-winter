@@ -21,7 +21,7 @@ public class World implements IBlockAccess {
 	private TreeSet scheduledTickTreeSet;
 	private Set scheduledTickSet;
 	public List loadedTileEntityList;
-	public long worldTime;
+	public static long worldTime;
 	public boolean snowCovered;
 	private long skyColor;
 	private long fogColor;
